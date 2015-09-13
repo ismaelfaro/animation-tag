@@ -12,16 +12,22 @@
   <style>
     body {
       font-family: roboto;
+      font-size: 12px;
+      font-weight: 100;
     }
 
     .block {
-      width: 200px;
-      height: 200px;
+      width: 120px;
+      height: 120px;
       color: white;
       text-align: center;
       background-color: #ff4081;
       margin: 10px;
       border-radius: 20px;
+    }
+
+    .text {
+      padding-top: 50px;
     }
 
     .otherColor {
@@ -36,15 +42,15 @@
   <div class="horizontal center-center layout">
 
     <animation-tag animation="flash">
-      <div class="block"> Instantaneus</div>
+      <div class="block horizontal center-center layout"> Instantaneus</div>
     </animation-tag>
 
     <animation-tag animation="flash" start-time="1.0">
-      <div class="block">Wait 1 seconds</div>
+      <div class="block horizontal center-center layout"> Wait 1 seconds</div>
     </animation-tag>
 
     <animation-tag animation="flash" start-time="2.0">
-      <div class="block"> Wait 2 seconds</div>
+      <div class="block horizontal center-center layout"> Wait 2 seconds</div>
     </animation-tag>
 
   </div>
@@ -52,11 +58,11 @@
   <div class="horizontal center-center layout">
 
     <animation-tag animation="flipInX">
-      <div class="block"> Animation "in"</div>
+      <div class="block horizontal center-center layout"> Animation "in"</div>
     </animation-tag>
 
-    <animation-tag animation="flipOutX" start-time="2.0">
-      <div class="block"> Animation "out"</div>
+    <animation-tag animation="flipOutX" start-time="4.0">
+      <div class="block horizontal center-center layout"> Animation "out", run after 4 second</div>
     </animation-tag>
 
   </div>
@@ -64,13 +70,13 @@
   <div class="horizontal center-center layout">
 
     <animation-tag animation="pulse infinite">
-      <div class="block">Loop</div>
+      <div class="block horizontal center-center layout">Loop</div>
     </animation-tag>
 
     <div class="horizontal center-center layout">
 
       <animation-tag id="interaction" animation="" onclick="clickme()">
-        <div class="block otherColor">click me</div>
+        <div class="block otherColor horizontal center-center layout">click me</div>
       </animation-tag>
 
       <button onclick="restoreme()">restore</button>
