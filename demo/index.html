@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>demo: animation-tag</title>
+
+  <link rel="import" href="../animation-tag.html">
+  <link rel="import" href="../../iron-flex-layout/classes/iron-flex-layout.html">
+  <link rel="import" href="../../font-roboto/roboto.html">
+
+  <style>
+    body {
+      font-family: roboto;
+    }
+
+    .block {
+      width: 200px;
+      height: 200px;
+      color: white;
+      text-align: center;
+      background-color: #ff4081;
+      margin: 10px;
+      border-radius: 20px;
+    }
+
+    .otherColor {
+      background-color: #3f51b5;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="horizontal center-center layout">
+
+    <animation-tag animation="flipInX">
+      <div class="block"> Instantaneus</div>
+    </animation-tag>
+
+    <animation-tag animation="flash" start-time="1.0">
+      <div class="block">Wait 1 seconds</div>
+    </animation-tag>
+
+    <animation-tag animation="flipOutX" start-time="2.0">
+      <div class="block"> Wait 2 seconds</div>
+    </animation-tag>
+
+  </div>
+
+  <div class="horizontal center-center layout">
+
+    <animation-tag animation="pulse infinite">
+      <div class="block">Loop</div>
+    </animation-tag>
+
+    <div class="horizontal center-center layout">
+
+      <animation-tag id="interaction" animation="" onclick="clickme()">
+        <div class="block otherColor">click me</div>
+      </animation-tag>
+
+      <button onclick="restoreme()">restore</button>
+
+    </div>
+  </div>
+
+  <script>
+    var element = document.querySelector('#interaction');
+
+    function clickme() {
+      element.animation = 'hinge';
+    }
+
+    function restoreme() {
+      element.animation = 'bounceIn';
+    }
+  </script>
+
+
+</body>
+
+</html>
