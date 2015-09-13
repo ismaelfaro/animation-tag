@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "homepage": "https://github.com/ismaelfaro/animation-tag",
   "authors": [
-    "ismael faro",
-    "abdon rodriguez"
+    "ismael faro  <hola@ismaelfaro.com>",
+    "abdon rodriguez <a@abdonrd.com>"
   ],
   "description": "Polymer Web Component to create easy animations effects",
   "main": "index.html",
@@ -14,8 +14,19 @@
   "keywords": [
     "web-components",
     "animation",
-    "polymer"
+    "polymer",
+    "custom-elements",
+    "polymer-elements"
   ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "font-roboto": "Polymer/font-roboto",
+    "iron-flex-layout": "PolymerElements/iron-flex-layout"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#~1.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
   "license": "MIT",
   "ignore": [
     "**/.*",
