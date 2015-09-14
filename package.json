@@ -1,0 +1,22 @@
+{
+	"name": "animation-tag",
+	"version": "1.0.0",
+	"description": "Simple and fast animation effects. It is a wrapper of Animate.css",
+	"main": "index.html",
+	"author": "ismael faro <soy@ismaelfaro.com>",
+	"license": "MIT",
+	"keywords": [
+		"vr",
+		"360",
+		"video",
+		"viewer",
+		"WebGL",
+		"polymer",
+		"web-components"
+	],
+  "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+  },
+	"devDependencies": {
+	}
+}
