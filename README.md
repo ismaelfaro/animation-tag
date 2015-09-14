@@ -9,9 +9,11 @@ Aplication demo [http://polymer-prototype.firebaseapp.com] (http://polymer-proto
 
 ## Usage
 
-<animation-tag animation="lightSpeedOut">
-    <element-to-anim></element-to-anim>
-</animation-tag>
+create a simple animation: lightSpeedOut
+
+><animation-tag animation="lightSpeedOut">
+>    <element-to-anim></element-to-anim>
+></animation-tag>
 
 <animation-tag animation="lightSpeedOut" start-time="2.0">
     <element-to-anim></element-to-anim>
