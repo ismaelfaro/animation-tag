@@ -11,13 +11,13 @@ Aplication demo [http://polymer-prototype.firebaseapp.com] (http://polymer-proto
 
 create a simple animation: lightSpeedOut
 
-><animation-tag animation="lightSpeedOut">
->    <element-to-anim></element-to-anim>
-></animation-tag>
+  <animation-tag animation="lightSpeedOut">
+      <element-to-anim></element-to-anim>
+  </animation-tag>
 
-<animation-tag animation="lightSpeedOut" start-time="2.0">
-    <element-to-anim></element-to-anim>
-</animation-tag>
+  <animation-tag animation="lightSpeedOut" start-time="2.0">
+      <element-to-anim></element-to-anim>
+  </animation-tag>
 
 With start-time set to time, in seconds, you can controll when the animation start.
 
