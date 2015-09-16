@@ -59,7 +59,8 @@ The `animation-tag` element create simple animations using Animate.css library.
 
 <script>
   Polymer({
-    is: "animation-tag",
+    is: 'animation-tag',
+
     properties: {
       /**
        * Time to start the animation
@@ -68,6 +69,7 @@ The `animation-tag` element create simple animations using Animate.css library.
         type: Number,
         value: 0.0
       },
+
       /**
        * To Stop the animation, changing the attribute
        */
@@ -76,6 +78,7 @@ The `animation-tag` element create simple animations using Animate.css library.
         value: false,
         observer: '_stop'
       },
+
       /**
        * Animation to exec.
        */
@@ -83,6 +86,7 @@ The `animation-tag` element create simple animations using Animate.css library.
         type: String,
         observer: '_animate'
       },
+
       /**
        * Animation duration.
        */
@@ -90,6 +94,7 @@ The `animation-tag` element create simple animations using Animate.css library.
         type: Number,
         value: 1.0
       },
+
       /**
        * Animation is run.
        */
@@ -98,11 +103,10 @@ The `animation-tag` element create simple animations using Animate.css library.
         value: false,
         observe: '_stopAnimation'
       }
-
     },
+
     /**
      * Controller the start animation
-     *
      */
     _animationController: function() {
       var self = this;
@@ -110,18 +114,18 @@ The `animation-tag` element create simple animations using Animate.css library.
         self.animationRun = false;
       }, this.animationTime);
     },
+
     /**
      * Used to launch the animation automatically
-     *
      */
     _animate: function() {
       if (!this.stop) {
         this.runAnimation(this.startTime);
       }
     },
+
     /**
      * Stop the animation
-     *
      */
     _stop: function() {
       if (this.animationRun) {
@@ -131,13 +135,13 @@ The `animation-tag` element create simple animations using Animate.css library.
         this.$.__anima.className = '';
       }
     },
+
     /**
      * Run the animation function, you can use to launch the animation.
-     *
      */
     runAnimation: function(start) {
       var self = this,
-        start = parseFloat(start) * 1000 || 0.0;
+          start = parseFloat(start) * 1000 || 0.0;
 
       setTimeout(function() {
         // TODO: use the .class funtions to improve the code
