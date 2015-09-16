@@ -1,27 +1,29 @@
 {
   "name": "animation-tag",
   "version": "0.1.0",
-  "homepage": "https://github.com/ismaelfaro/animation-tag",
-  "authors": [
-    "ismael faro",
-    "abdon rodriguez"
-  ],
   "description": "Polymer Web Component to create easy animations effects",
-  "main": "index.html",
-  "moduleType": [
-    "amd"
+  "authors": [
+    "Ismael Faro",
+    "Abdón Rodríguez Davila"
   ],
   "keywords": [
     "web-components",
-    "animation",
-    "polymer"
+    "web-component",
+    "polymer",
+    "animation"
   ],
+  "main": "animation-tag.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ismaelfaro/animation-tag"
+  },
   "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "homepage": "https://github.com/ismaelfaro/animation-tag",
+  "dependencies": {
+    "polymer": "polymer/polymer#^1.1.0"
+  },
+  "devDependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0",
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0"
+  }
 }
