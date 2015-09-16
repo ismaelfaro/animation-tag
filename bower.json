@@ -18,6 +18,7 @@
     "url": "git://github.com/ismaelfaro/animation-tag"
   },
   "license": "MIT",
+  "homepage": "https://github.com/ismaelfaro/animation-tag",
   "dependencies": {
     "polymer": "polymer/polymer#^1.1.0"
   },
